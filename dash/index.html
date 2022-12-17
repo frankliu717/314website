@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="http://example.com/dash/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Model Examination - Dashboard - CSE314 Group Project</title>
+    <title>Model Examination - CSE314 Group Project</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Model Examination - Dashboard";
+        var mkdocs_page_name = "Model Examination";
         var mkdocs_page_input_path = "dash.ipynb";
         var mkdocs_page_url = "/dash/";
       </script>
@@ -68,8 +68,12 @@
                 <li class="toctree-l1"><a class="reference internal" href="../modelrf/">Model - Random Forest</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../dash.html">Model Examination</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Model Examination</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#input-model-metrics">Input Model Metrics</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -90,7 +94,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Model Examination - Dashboard</li>
+      <li>Model Examination</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -1136,7 +1140,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="model-examination-dashboard">Model Examination - Dashboard<a class="anchor-link" href="#model-examination-dashboard">&#182;</a></h1>
+<h1 id="model-examination">Model Examination<a class="anchor-link" href="#model-examination">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -1207,11 +1211,11 @@ import plotly.express as px</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_39627/4057734045.py:8: UserWarning: 
+<pre>/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_1880/4057734045.py:8: UserWarning: 
 The dash_core_components package is deprecated. Please replace
 `import dash_core_components as dcc` with `from dash import dcc`
   import dash_core_components as dcc
-/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_39627/4057734045.py:9: UserWarning: 
+/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_1880/4057734045.py:9: UserWarning: 
 The dash_html_components package is deprecated. Please replace
 `import dash_html_components as html` with `from dash import html`
   import dash_html_components as html
@@ -1241,7 +1245,7 @@ The dash_html_components package is deprecated. Please replace
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1296,7 +1300,7 @@ modeln.head()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
@@ -1355,7 +1359,7 @@ modeln.head()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1458,7 +1462,7 @@ modeln.head()</div>
     <span class="k">return</span> <span class="p">(</span><span class="n">barchart</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;inline&quot;</span><span class="p">,</span><span class="n">port</span><span class="o">=</span><span class="mi">8051</span><span class="p">)</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt">#modified from source https://www.youtube.com/watch?v=FuJOsZgo4nU
 from jupyter_dash import JupyterDash
@@ -1548,7 +1552,7 @@ def update_graph(x_axis, y_axis):
     return (barchart)
 
 if __name__ == '__main__':
-    app.run_server(mode='inline')</div>
+    app.run_server(mode = "inline",port=8051)</div>
     
         </div>
     </div>
@@ -1575,7 +1579,7 @@ if __name__ == '__main__':
         <iframe
             width="100%"
             height="650"
-            src="http://127.0.0.1:8050/"
+            src="http://127.0.0.1:8051/"
             frameborder="0"
             allowfullscreen
             
@@ -1629,6 +1633,10 @@ if __name__ == '__main__':
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../modelrf/" class="btn btn-neutral float-left" title="Model - Random Forest"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Kaggle%20Competition/" class="btn btn-neutral float-right" title="Kaggle Competition">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -1650,6 +1658,10 @@ if __name__ == '__main__':
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../modelrf/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Kaggle%20Competition/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
