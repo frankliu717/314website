@@ -11,6 +11,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://example.com/Logistic/</loc>
+         <lastmod>2022-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://example.com/RF/</loc>
+         <lastmod>2022-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://example.com/dash%20demo/</loc>
+         <lastmod>2022-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://example.com/dash/</loc>
          <lastmod>2022-12-17</lastmod>
          <changefreq>daily</changefreq>

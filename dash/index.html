@@ -61,17 +61,19 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../modellogi/">Model - Logistics</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Logistic/">Model - Logistics</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../modelrf/">Model - Random Forest</a>
+                <li class="toctree-l1"><a class="reference internal" href="../RF/">Model - Random Forest</a>
                 </li>
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Model Examination</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#input-model-metrics">Input Model Metrics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#demo">Demo</a>
     </li>
     </ul>
                 </li>
@@ -1211,11 +1213,11 @@ import plotly.express as px</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_1880/4057734045.py:8: UserWarning: 
+<pre>/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_2271/4057734045.py:8: UserWarning: 
 The dash_core_components package is deprecated. Please replace
 `import dash_core_components as dcc` with `from dash import dcc`
   import dash_core_components as dcc
-/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_1880/4057734045.py:9: UserWarning: 
+/var/folders/c3/pnj_1rm104j3p8q7d6y_kc0h0000gn/T/ipykernel_2271/4057734045.py:9: UserWarning: 
 The dash_html_components package is deprecated. Please replace
 `import dash_html_components as html` with `from dash import html`
   import dash_html_components as html
@@ -1359,7 +1361,7 @@ modeln.head()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1462,7 +1464,7 @@ modeln.head()</div>
     <span class="k">return</span> <span class="p">(</span><span class="n">barchart</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8051</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">()</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt">#modified from source https://www.youtube.com/watch?v=FuJOsZgo4nU
 from jupyter_dash import JupyterDash
@@ -1552,7 +1554,7 @@ def update_graph(x_axis, y_axis):
     return (barchart)
 
 if __name__ == '__main__':
-    app.run_server(port=8051)</div>
+    app.run_server()</div>
     
         </div>
     </div>
@@ -1574,7 +1576,7 @@ if __name__ == '__main__':
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Dash app running on http://127.0.0.1:8051/
+<pre>Dash app running on http://127.0.0.1:8050/
 </pre>
 </div>
 </div>
@@ -1583,6 +1585,29 @@ if __name__ == '__main__':
 
 </div>
 
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="demo">Demo<a class="anchor-link" href="#demo">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>please download it at <a href="https://github.com/zhengxiaoyan321/314_project/blob/e4a149c5bbb8c209416fe716822508ea822a84ff/dash%20demo.ipynb">https://github.com/zhengxiaoyan321/314_project/blob/e4a149c5bbb8c209416fe716822508ea822a84ff/dash%20demo.ipynb</a></p>
+
+</div>
+</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -1624,7 +1649,7 @@ if __name__ == '__main__':
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../modelrf/" class="btn btn-neutral float-left" title="Model - Random Forest"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../RF/" class="btn btn-neutral float-left" title="Model - Random Forest"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../Kaggle%20Competition/" class="btn btn-neutral float-right" title="Kaggle Competition">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -1648,7 +1673,7 @@ if __name__ == '__main__':
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../modelrf/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../RF/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../Kaggle%20Competition/" style="color: #fcfcfc">Next &raquo;</a></span>
