@@ -1359,7 +1359,7 @@ modeln.head()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1462,7 +1462,7 @@ modeln.head()</div>
     <span class="k">return</span> <span class="p">(</span><span class="n">barchart</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;inline&quot;</span><span class="p">,</span><span class="n">port</span><span class="o">=</span><span class="mi">8051</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8051</span><span class="p">)</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt">#modified from source https://www.youtube.com/watch?v=FuJOsZgo4nU
 from jupyter_dash import JupyterDash
@@ -1552,7 +1552,7 @@ def update_graph(x_axis, y_axis):
     return (barchart)
 
 if __name__ == '__main__':
-    app.run_server(mode = "inline",port=8051)</div>
+    app.run_server(port=8051)</div>
     
         </div>
     </div>
@@ -1573,20 +1573,10 @@ if __name__ == '__main__':
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-
-        <iframe
-            width="100%"
-            height="650"
-            src="http://127.0.0.1:8051/"
-            frameborder="0"
-            allowfullscreen
-            
-        ></iframe>
-        
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Dash app running on http://127.0.0.1:8051/
+</pre>
 </div>
-
 </div>
 
 </div>
